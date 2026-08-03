@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/*
+  LUMIYEON — "Mono" 디자인 토큰 (흑백 조화 풀모던)
+  하네스 규칙: 색상은 반드시 아래 토큰만 사용. raw hex 하드코딩 금지.
+  단일 소스: /DESIGN.md · OG 이미지 동기화: src/lib/ogTokens.ts
+*/
+
+:root {
+  /* 베이스 — 순백 + 니어블랙, 흑백 교차 섹션 구조 */
+  --background: #ffffff; /* 순백 */
+  --foreground: #0a0a0a; /* 니어블랙 */
+  --surface: #f4f4f5; /* 소프트 그레이 카드/블록 면 */
+  --line: rgba(10, 10, 10, 0.08); /* 헤어라인 구분선 */
+  --muted: #71717a; /* 보조 텍스트 */
+  /* 블랙 섹션 배경 — 순흑 대신 소프트 블랙 (업계 관행 #08~#16 실측 기반) */
+  --ink: #111111;
+
+  /* 외부 브랜드 — 와디즈 민트 (버튼 전용) */
+  --wadiz: #00c4c4;
+
+  /* 컬러테라피 팔레트 (7색 — 테스트 데이터 색, 변경 금지) */
+  --therapy-red: #e5392e; /* 빨강 — 열정 */
+  --therapy-orange: #ef8a3c; /* 주황 — 활력 */
+  --therapy-yellow: #f4c430; /* 노랑 — 행복 */
+  --therapy-green: #3fa65a; /* 초록 — 안정 */
+  --therapy-blue: #2e78c8; /* 파랑 — 평온 */
+  --therapy-purple: #8b5cf6; /* 보라 — 신비 */
+  --therapy-pink: #f48fb1; /* 핑크 — 사랑 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  /* 블랙 섹션 → bg-ink */
+  --color-ink: var(--ink);
+  /* 와디즈 민트 → bg-wadiz */
+  --color-wadiz: var(--wadiz);
+  /* 컬러테라피 팔레트 → bg-t-red, bg-t-blue 등 */
+  --color-t-red: var(--therapy-red);
+  --color-t-orange: var(--therapy-orange);
+  --color-t-yellow: var(--therapy-yellow);
+  --color-t-green: var(--therapy-green);
+  --color-t-blue: var(--therapy-blue);
+  --color-t-purple: var(--therapy-purple);
+  --color-t-pink: var(--therapy-pink);
+
+  --font-sans: var(--font-pretendard);
+  --font-display: var(--font-pretendard);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-pretendard), -apple-system, "Apple SD Gothic Neo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+

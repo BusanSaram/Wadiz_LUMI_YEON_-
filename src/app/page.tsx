@@ -306,10 +306,6 @@ export default function Home() {
             <span className="font-semibold text-foreground">100% 수작업 팔찌</span>
             입니다.
           </p>
-          <p className="mt-4 text-pretty leading-relaxed text-muted">
-            공장에서 기계로 빠르게 찍어내기보다, 내 소중한 인연이 지닐
-            물건이라는 마음으로 정직한 힘을 다해 정성껏 완성합니다.
-          </p>
         </Reveal>
       </section>
 
@@ -690,9 +686,10 @@ export default function Home() {
                 손으로 짓습니다
               </h2>
             </div>
-            <p className="max-w-sm text-pretty leading-relaxed text-white/60">
+            <p className="max-w-md text-pretty leading-relaxed text-white/60">
               실을 고르고 매듭을 엮어 하나의 팔찌가 되기까지, 모든 과정을 직접
-              손으로 작업합니다. 영상으로 확인해 보세요.
+              손으로 작업합니다. 내 소중한 인연이 지닐 물건이라는 마음으로,
+              정직한 힘을 다해 정성껏 완성합니다. 영상으로 확인해 보세요.
             </p>
           </Reveal>
           <Reveal className="mt-10">

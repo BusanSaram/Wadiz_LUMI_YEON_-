@@ -349,14 +349,35 @@ export default function Home() {
               as="h2"
               className="mt-5 text-balance text-3xl font-extrabold leading-[1.2] tracking-tight sm:text-5xl"
             >
-              색을 다루는 법을
+              컬러테라피스트와 AI가
               <br />
-              제대로 배웠습니다
+              함께 만든 컬러 검사지
             </Reveal>
             <Reveal as="p" className="mt-7 max-w-md text-pretty leading-relaxed text-muted">
-              루미연의 컬러 테스트는 가벼운 취향 놀이가 아니에요. 일본컬러라이트테라피협회(JCLTA)
-              컬러 프랙티셔너와 PIB연구소 컬러테라피 과정을 수료한 컬러테라피스트가, 색과 마음의
-              관계를 바탕으로 문항과 색 해석을 설계했습니다.
+              본 서비스는 퍼스널 이미지 브랜딩 연구소(PIB) 및 일본 JCLTA 컬러테라피 과정을
+              수료한 컬러테라피스트의 자문과 AI(인공지능) 기술을 이용하여 만든 컬러
+              검사지입니다.
+            </Reveal>
+            <Reveal className="mt-8 flex max-w-md flex-col gap-4 border-t border-line pt-8">
+              {[
+                {
+                  title: "컬러테라피스트 자문",
+                  body: "국내외 과정을 수료한 테라피스트의 자문을 바탕으로 컬러 검사지를 설계했습니다.",
+                },
+                {
+                  title: "AI 기술 이용",
+                  body: "AI 기술을 활용하여 체계적인 컬러 검사지 문항을 구축했습니다.",
+                },
+              ].map((it) => (
+                <div key={it.title} className="flex flex-col gap-1">
+                  <span className="text-sm font-bold tracking-tight">{it.title}</span>
+                  <p className="text-sm leading-relaxed text-muted">{it.body}</p>
+                </div>
+              ))}
+            </Reveal>
+            <Reveal as="p" className="mt-8 max-w-md text-pretty leading-relaxed text-muted">
+              PIB 및 JCLTA 과정을 수료한 컬러테라피스트의 자문과 AI를 이용해 만든 컬러
+              검사지를 통해, 당신만을 위한 맞춤형 컬러 힐링 솔루션을 확인해 보세요.
             </Reveal>
           </div>
           <Reveal className="grid grid-cols-2 gap-4">
@@ -391,6 +412,11 @@ export default function Home() {
             ))}
           </Reveal>
         </div>
+        {/* 유의사항 — 의학적 진단이 아님을 고지 */}
+        <Reveal as="p" className="mt-12 text-pretty text-xs leading-relaxed text-muted">
+          ※ 본 컬러 검사지는 컬러테라피스트의 자문 및 AI 기술을 이용해 제작된 심리 코칭
+          가이드이며, 의학적인 진단이나 치료를 대신할 수 없습니다.
+        </Reveal>
       </section>
 
       {/* 3. 프로덕트 — 매듭 2종 대형 카드 */}

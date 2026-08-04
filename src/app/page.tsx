@@ -223,19 +223,19 @@ export default function Home() {
       {/* 1. Hero — 착용 사진을 희미하게 깔고 좌측에 볼드 타이포 (사진 우측이 손, 좌측이 여백) */}
       <section className="relative overflow-hidden">
         <Image
-          src="/knots/lifestyle-hero.jpg?v=5"
-          alt="레드·네이비 매듭 팔찌를 착용한 손"
+          src="/knots/lifestyle-hero.jpg?v=6"
+          alt="레드·네이비 매듭 팔찌를 착용한 손목"
           fill
           priority
           sizes="100vw"
-          // 손목의 매듭 팔찌(우측 상단)를 화면에 잡아두는 크롭
-          className="object-cover object-[68%_32%]"
+          // 팔찌 클로즈업 크롭 — 팔찌는 프레임의 약 (62%, 33%) 지점
+          className="object-cover object-[62%_33%]"
         />
-        {/* 옅은 전체 베일 — 사진을 살짝 눌러 통일감만 */}
-        <div className="absolute inset-0 bg-background/25" aria-hidden />
-        {/* 좌측 페이드 — 텍스트가 놓이는 왼쪽만 하얗게, 오른쪽 팔찌는 선명하게 유지 */}
+        {/* 아주 옅은 전체 베일 — 팔찌 색이 죽지 않을 만큼만 */}
+        <div className="absolute inset-0 bg-background/10" aria-hidden />
+        {/* 좌측 페이드 — 텍스트가 놓이는 왼쪽만 하얗게, 팔찌가 놓이는 60% 지점부터는 투명 */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-background via-background/45 to-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-background from-15% via-background/40 via-42% to-transparent to-66%"
           aria-hidden
         />
         {/* 하단 그라데이션 — 다음 화이트 섹션으로 매끄러운 전환 */}

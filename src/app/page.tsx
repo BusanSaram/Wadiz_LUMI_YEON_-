@@ -297,12 +297,12 @@ export default function Home() {
         </Reveal>
 
         <Reveal className="mx-auto mt-16 max-w-2xl border-t border-line pt-12">
-          <Eyebrow>Philosophy</Eyebrow>
+          <Eyebrow>This Project Philosophy</Eyebrow>
           <p className="mt-6 text-pretty leading-relaxed text-muted">
-            루미연은 내 마음에 컬러 에너지를 채우는 컬러테라피적 가치와, 그
-            기운이 흩어지지 않도록 단단히 고정하는 전통 매듭 팔찌를 현대적
-            감성으로 융합했습니다. 한국 전통 매듭 방식인 도래매듭과 평매듭을
-            현대적 감각으로 섬세하게 되살렸습니다.
+            루미연은 이 프로젝트에서 내 마음에 컬러 에너지를 채우는 컬러테라피적
+            가치와, 그 기운이 흩어지지 않도록 단단히 고정하는 전통 매듭 팔찌를
+            통해 현대적 감성으로 융합하였습니다. 한국 전통 매듭 방식인 도래매듭과
+            평매듭을 현대적 감각으로 섬세하게 되살렸습니다.
           </p>
         </Reveal>
       </section>

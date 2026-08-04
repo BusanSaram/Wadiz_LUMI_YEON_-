@@ -143,7 +143,9 @@ function ColorFlipCard({ c }: { c: (typeof palette)[number] }) {
       </div>
       <div className="flex items-baseline justify-between px-1">
         <span className="font-semibold">{c.name}</span>
-        <span className="text-sm text-muted">{c.mean}</span>
+        <span className="text-sm text-muted">
+          {flipped ? "다시 뒤집기 ↻" : "눌러서 의미 ↻"}
+        </span>
       </div>
     </button>
   );

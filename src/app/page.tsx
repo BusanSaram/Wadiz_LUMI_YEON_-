@@ -358,12 +358,6 @@ export default function Home() {
               컬러 프랙티셔너와 PIB연구소 컬러테라피 과정을 수료한 컬러테라피스트가, 색과 마음의
               관계를 바탕으로 문항과 색 해석을 설계했습니다.
             </Reveal>
-            <Reveal className="mt-10">
-              <Link href="/test" className={`${pill.dark} group`}>
-                컬러 테스트 시작하기
-                <span className="transition-transform group-hover:translate-x-0.5">→</span>
-              </Link>
-            </Reveal>
           </div>
           <Reveal className="grid grid-cols-2 gap-4">
             {[

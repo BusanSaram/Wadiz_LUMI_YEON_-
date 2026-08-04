@@ -338,6 +338,67 @@ export default function Home() {
         </Reveal>
       </section>
 
+      {/* 2-1. 자격 — 컬러테라피 수료증 (테스트의 근거) */}
+      <section className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 sm:pb-32">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="flex flex-col items-start">
+            <Reveal>
+              <Eyebrow>Certified</Eyebrow>
+            </Reveal>
+            <Reveal
+              as="h2"
+              className="mt-5 text-balance text-3xl font-extrabold leading-[1.2] tracking-tight sm:text-5xl"
+            >
+              색을 다루는 법을
+              <br />
+              제대로 배웠습니다
+            </Reveal>
+            <Reveal as="p" className="mt-7 max-w-md text-pretty leading-relaxed text-muted">
+              루미연의 컬러 테스트는 가벼운 취향 놀이가 아니에요. 일본컬러라이트테라피협회(JCLTA)
+              컬러 프랙티셔너와 PIB연구소 컬러테라피 과정을 수료한 컬러테라피스트가, 색과 마음의
+              관계를 바탕으로 문항과 색 해석을 설계했습니다.
+            </Reveal>
+            <Reveal className="mt-10">
+              <Link href="/test" className={`${pill.dark} group`}>
+                컬러 테스트 시작하기
+                <span className="transition-transform group-hover:translate-x-0.5">→</span>
+              </Link>
+            </Reveal>
+          </div>
+          <Reveal className="grid grid-cols-2 gap-4">
+            {[
+              {
+                src: "/knots/cert-jclta.jpg?v=5",
+                alt: "일본컬러라이트테라피협회 JCLTA 컬러 프랙티셔너 수료증",
+                label: "JCLTA 일본컬러라이트테라피협회",
+                sub: "Color Practitioner Course · 2016",
+              },
+              {
+                src: "/knots/cert-pib.jpg?v=5",
+                alt: "PIB연구소 컬러테라피 기초 과정 수료증",
+                label: "PIB연구소",
+                sub: "Color Therapy Basic Course · 2016",
+              },
+            ].map((c) => (
+              <div key={c.src} className="rounded-3xl bg-surface p-3">
+                {/* 문서라 잘림 없이 전체가 보여야 함 — object-contain */}
+                <div className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-background">
+                  <Image
+                    src={c.src}
+                    alt={c.alt}
+                    fill
+                    sizes="(min-width: 1024px) 270px, 45vw"
+                    className="object-contain"
+                  />
+                </div>
+                <p className="px-1 pt-3 text-xs font-bold tracking-tight">{c.label}</p>
+                <p className="px-1 pb-1 pt-0.5 text-xs text-muted">{c.sub}</p>
+              </div>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       {/* 3. 프로덕트 — 매듭 2종 대형 카드 */}
       <section id="knot" className="mx-auto w-full max-w-6xl scroll-mt-24 px-6 pb-24 sm:px-8 sm:pb-32">
         <Reveal className="flex flex-col gap-4">

@@ -27,7 +27,7 @@ const knots = [
 ];
 
 const steps = [
-  { no: "1", title: "색을 고르다", body: "1분 컬러 테스트로 지금 내 마음에 필요한 색을 찾아요.", image: "/knots/threads2.jpg?v=5", pos: 50, gif: false },
+  { no: "1", title: "색을 고르다", body: "컬러 테스트로 지금 내 마음에 필요한 색을 찾아요.", image: "/knots/threads2.jpg?v=5", pos: 50, gif: false },
   { no: "2", title: "매듭을 짓다", body: "한 올 한 올, 손으로 천천히 매듭을 엮어요.", image: "/knots/knotting.gif", pos: 50, gif: true },
   { no: "3", title: "손목에 두르다", body: "나만의 색이 바쁜 하루 곁에 가만히 머물러요.", image: "/knots/moment-dog.jpg?v=5", pos: 40, gif: false },
 ];

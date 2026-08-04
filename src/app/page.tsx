@@ -302,9 +302,7 @@ export default function Home() {
             루미연은 내 마음에 컬러 에너지를 채우는 컬러테라피적 가치와, 그
             기운이 흩어지지 않도록 단단히 고정하는 전통 매듭 팔찌를 현대적
             감성으로 융합했습니다. 한국 전통 매듭 방식인 도래매듭과 평매듭을
-            현대적 감각으로 섬세하게 되살린{" "}
-            <span className="font-semibold text-foreground">100% 수작업 팔찌</span>
-            입니다.
+            현대적 감각으로 섬세하게 되살렸습니다.
           </p>
         </Reveal>
       </section>
@@ -687,9 +685,10 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-md text-pretty leading-relaxed text-white/60">
-              실을 고르고 매듭을 엮어 하나의 팔찌가 되기까지, 모든 과정을 직접
-              손으로 작업합니다. 내 소중한 인연이 지닐 물건이라는 마음으로,
-              정직한 힘을 다해 정성껏 완성합니다. 영상으로 확인해 보세요.
+              실을 고르고 매듭을 엮어 하나의 팔찌가 되기까지, 모든 과정이{" "}
+              <span className="font-semibold text-white">100% 수작업</span>입니다.
+              내 소중한 인연이 지닐 물건이라는 마음으로, 정직한 힘을 다해 정성껏
+              완성합니다. 영상으로 확인해 보세요.
             </p>
           </Reveal>
           <Reveal className="mt-10">

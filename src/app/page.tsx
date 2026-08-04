@@ -660,6 +660,37 @@ export default function Home() {
         </ol>
       </section>
 
+      {/* 6-1. 착용법 영상 — 조절 매듭 사용법 */}
+      <section className="mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 sm:pb-32">
+        <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.35fr] lg:gap-14">
+          <div className="flex flex-col items-start">
+            <Reveal>
+              <Eyebrow>How to Wear</Eyebrow>
+            </Reveal>
+            <Reveal
+              as="h2"
+              className="mt-5 text-balance text-3xl font-extrabold leading-[1.2] tracking-tight sm:text-5xl"
+            >
+              팔찌 매듭,
+              <br />
+              이렇게 매세요
+            </Reveal>
+            <Reveal as="p" className="mt-7 max-w-md text-pretty leading-relaxed text-muted">
+              끈 양쪽을 당기면 조여지고, 매듭을 밀면 다시 넉넉해지는 조절
+              매듭이에요. 잠금장치 없이 누구나 손목 굵기에 맞춰 편하게 착용할 수
+              있습니다.
+            </Reveal>
+          </div>
+          <Reveal>
+            <YouTubeLite
+              id="zbOVsMnXsu4"
+              title="루미연 LUMIYEON | 팔찌 매는법"
+              poster="/knots/wear-video.jpg?v=5"
+            />
+          </Reveal>
+        </div>
+      </section>
+
       {/* 7. CTA — 블랙 */}
       <section className="bg-ink">
         <div className="mx-auto flex w-full max-w-4xl flex-col items-center px-6 py-28 text-center sm:px-8 sm:py-36">

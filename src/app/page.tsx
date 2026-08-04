@@ -270,7 +270,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.18, ease }}
           >
-            1분 컬러 테스트로 지금 나에게 필요한 색을 찾고, 손으로 엮은 전통 매듭
+            컬러 테스트로 지금 나에게 필요한 색을 찾고, 손으로 엮은 전통 매듭
             팔찌를 만나 보세요.
           </motion.p>
 

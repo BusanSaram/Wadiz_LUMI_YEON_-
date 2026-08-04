@@ -223,13 +223,13 @@ export default function Home() {
       {/* 1. Hero — 착용 사진을 희미하게 깔고 좌측에 볼드 타이포 (사진 우측이 손, 좌측이 여백) */}
       <section className="relative overflow-hidden">
         <Image
-          src="/knots/lifestyle-hero.jpg?v=6"
+          src="/knots/lifestyle-hero.jpg?v=7"
           alt="레드·네이비 매듭 팔찌를 착용한 손목"
           fill
           priority
           sizes="100vw"
-          // 팔찌 클로즈업 크롭 — 팔찌는 프레임의 약 (62%, 33%) 지점
-          className="object-cover object-[62%_33%]"
+          // 팔찌 전체 + 손이 함께 보이는 크롭 — 팔찌는 프레임의 약 (55%, 34%) 지점
+          className="object-cover object-[55%_34%]"
         />
         {/* 아주 옅은 전체 베일 — 팔찌 색이 죽지 않을 만큼만 */}
         <div className="absolute inset-0 bg-background/10" aria-hidden />

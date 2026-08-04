@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, MotionConfig } from "motion/react";
 import { COLOR_ORDER, colors } from "@/lib/colorTest";
 import { ease, Eyebrow, Reveal, pill, CountUp } from "@/components/modern";
+import { YouTubeLite } from "@/components/YouTubeLite";
 
 const palette = COLOR_ORDER.map((k) => ({ key: k, ...colors[k] }));
 
@@ -551,9 +552,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. 공예 스토리 — 블랙 밴드 + 카운트업 */}
+      {/* 5. 공예 스토리 — 블랙 밴드 + 카운트업 + 제작 영상 */}
       <section className="bg-ink">
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-24 sm:px-8 sm:py-32 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-24 pb-16 sm:px-8 sm:pt-32 sm:pb-20 lg:grid-cols-2 lg:gap-16">
           <Reveal className="relative aspect-[4/3] overflow-hidden rounded-3xl">
             <Image
               src="/knots/threads.jpg?v=5"
@@ -593,6 +594,31 @@ export default function Home() {
               </div>
             </Reveal>
           </div>
+        </div>
+
+        {/* 제작 영상 — 100% 수작업의 증거 */}
+        <div className="mx-auto w-full max-w-5xl px-6 pb-24 sm:px-8 sm:pb-32">
+          <Reveal className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-4">
+              <Eyebrow onDark>Handmade</Eyebrow>
+              <h2 className="text-balance text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
+                기계가 아니라,
+                <br />
+                손으로 짓습니다
+              </h2>
+            </div>
+            <p className="max-w-sm text-pretty leading-relaxed text-white/60">
+              실을 고르고 매듭을 엮어 하나의 팔찌가 되기까지, 모든 과정을 직접
+              손으로 작업합니다. 영상으로 확인해 보세요.
+            </p>
+          </Reveal>
+          <Reveal className="mt-10">
+            <YouTubeLite
+              id="H-zb1R1QqSE"
+              title="루미연 LUMIYEON | 도래매듭 팔찌, 100% 손으로 직접 만듭니다"
+              poster="/knots/craft-video.jpg?v=5"
+            />
+          </Reveal>
         </div>
       </section>
 

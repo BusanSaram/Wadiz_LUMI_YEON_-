@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "LUMIYEON — 나의 컬러를 찾는 전통 매듭",
   description:
     "컬러테라피로 나에게 맞는 색을 찾고, 한국 전통 매듭 팔찌를 추천받으세요.",
-  icons: { icon: "/lumiyeon-logo.png" },
+  // 아이콘은 파일 컨벤션(src/app/icon.png · apple-icon.png)으로 자동 주입
 };
 
 export default function RootLayout({

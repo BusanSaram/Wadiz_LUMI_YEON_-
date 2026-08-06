@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { WADIZ_URL } from "@/lib/links";
 
 export default function SiteFooter() {
   return (
@@ -47,7 +48,7 @@ export default function SiteFooter() {
               카카오톡 채널
             </a>
             <a
-              href="https://www.wadiz.kr"
+              href={WADIZ_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-white/60 transition-colors hover:text-white"

@@ -13,10 +13,8 @@ import {
   type ColorKey,
 } from "@/lib/colorTest";
 import { isAndroid, isInAppBrowser, openInDefaultBrowser } from "@/lib/inApp";
+import { WADIZ_URL } from "@/lib/links";
 import { ease, Eyebrow, pill } from "@/components/modern";
-
-// 와디즈 기획전 링크 — 실제 URL 받으면 교체
-const WADIZ_URL = "https://www.wadiz.kr";
 
 // OG 결과지 이미지 캐시 버스터.
 // /result/image 는 immutable 1년 캐시라, 디자인을 바꾸면 이 숫자를 올려야

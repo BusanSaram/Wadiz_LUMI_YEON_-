@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { WADIZ_URL } from "@/lib/links";
 
 export default function SiteHeader() {
   return (
@@ -25,7 +26,7 @@ export default function SiteHeader() {
             나의 컬러 찾기
           </Link>
           <a
-            href="https://www.wadiz.kr"
+            href={WADIZ_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-wadiz px-3.5 py-2.5 text-sm font-semibold text-white transition-[background-color,transform] duration-150 ease-out hover:bg-wadiz/90 active:scale-[0.97] sm:px-5"

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, MotionConfig } from "motion/react";
 import { COLOR_ORDER, colors } from "@/lib/colorTest";
+import { WADIZ_URL } from "@/lib/links";
 import { ease, Eyebrow, Reveal, pill, CountUp } from "@/components/modern";
 import { YouTubeLite } from "@/components/YouTubeLite";
 
@@ -794,7 +795,7 @@ export default function Home() {
               <span className="transition-transform group-hover:translate-x-0.5">→</span>
             </Link>
             <a
-              href="https://www.wadiz.kr"
+              href={WADIZ_URL}
               target="_blank"
               rel="noopener noreferrer"
               className={pill.wadiz}
